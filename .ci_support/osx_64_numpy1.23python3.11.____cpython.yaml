@@ -1,5 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.9'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -9,7 +13,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '16'
 libsentencepiece:
-- 0.1.99
+- 0.2.0
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
@@ -23,9 +27,11 @@ python:
 pytorch:
 - '2.1'
 re2:
-- 2023.06.02
+- 2023.09.01
 target_platform:
 - osx-64
 zip_keys:
+- - c_stdlib_version
+  - MACOSX_DEPLOYMENT_TARGET
 - - python
   - numpy
