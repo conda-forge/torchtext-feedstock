@@ -20,9 +20,6 @@ source:
 
 build:
   number: 2
-  # no pytorch on windows in conda-forge, see
-  # https://github.com/conda-forge/pytorch-cpu-feedstock/issues/32
-  skip: true  # [win]
   # to ensure we get the right version without extra suffixes, c.f.
   # https://github.com/pytorch/text/blob/v0.18.0/packaging/pkg_helpers.bash#L114
   script_env:
