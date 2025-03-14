@@ -20,6 +20,8 @@ source:
 
 build:
   number: 2
+  # debug
+  skip: true  # [not win]
   # to ensure we get the right version without extra suffixes, c.f.
   # https://github.com/pytorch/text/blob/v0.18.0/packaging/pkg_helpers.bash#L114
   script_env:
