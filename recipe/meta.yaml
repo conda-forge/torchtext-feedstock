@@ -26,6 +26,7 @@ build:
   # https://github.com/pytorch/text/blob/v0.18.0/packaging/pkg_helpers.bash#L114
   script_env:
     - BUILD_VERSION={{ version }}
+    - TORCH_PYTHON_LIBRARY=%LIBRARY_BIN%\torch_python.dll   # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   rpaths:
     - lib/
