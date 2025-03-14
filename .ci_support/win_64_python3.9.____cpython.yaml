@@ -1,0 +1,29 @@
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2019
+libsentencepiece:
+- 0.2.0
+libutf8proc:
+- '2.10'
+numpy:
+- '2.0'
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+python:
+- 3.9.* *_cpython
+pytorch:
+- '2.5'
+re2:
+- 2024.07.02
+target_platform:
+- win-64
+zip_keys:
+- - python
+  - numpy
