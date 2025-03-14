@@ -59,6 +59,9 @@ requirements:
     - sacremoses
     - spacy
     - tqdm
+  run_constrained:
+    # see https://github.com/pytorch/data/commit/c64801fc6b7e9d3693a0b73621a5d7ac8b4b82e5
+    - torchdata <0.10
 
 test:
   requires:
