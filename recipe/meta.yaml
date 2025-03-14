@@ -15,12 +15,11 @@ source:
     - patches/0002-fix-some-CMake-arguments-for-our-infrastructure.patch
     # remove spurious run requirements from installation requirements
     - patches/0003-remove-unnecessary-installation-requirements.patch
-    - patches/0004-load-library-from-correct-place.patch
-    - patches/0005-don-t-try-to-init-submodules.patch
-    - patches/0006-fix-path-inconsistency-in-test.patch
+    - patches/0004-don-t-try-to-init-submodules.patch
+    - patches/0005-fix-path-inconsistency-in-test.patch
 
 build:
-  number: 1
+  number: 2
   # no pytorch on windows in conda-forge, see
   # https://github.com/conda-forge/pytorch-cpu-feedstock/issues/32
   skip: true  # [win]
@@ -60,6 +59,9 @@ requirements:
     - sacremoses
     - spacy
     - tqdm
+  run_constrained:
+    # see https://github.com/pytorch/data/commit/c64801fc6b7e9d3693a0b73621a5d7ac8b4b82e5
+    - torchdata <0.10
 
 test:
   requires:
