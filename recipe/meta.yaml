@@ -17,6 +17,8 @@ source:
     - patches/0003-remove-unnecessary-installation-requirements.patch
     - patches/0004-don-t-try-to-init-submodules.patch
     - patches/0005-fix-path-inconsistency-in-test.patch
+    # work around behaviour change in pytorch 2.6
+    - patches/0006-allow-torch.load-to-load-more-than-weights-as-previo.patch
 
 build:
   number: 4

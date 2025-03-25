@@ -1,7 +1,7 @@
 From 1485ba712e6408839bd827a0ab5aa1bc924d50d2 Mon Sep 17 00:00:00 2001
 From: "H. Vetinari" <h.vetinari@gmx.com>
 Date: Sat, 21 Jan 2023 12:46:49 +1100
-Subject: [PATCH 5/5] fix path inconsistency in test
+Subject: [PATCH 5/6] fix path inconsistency in test
 
 ---
  test/torchtext_unittest/prototype/test_with_asset.py | 8 ++++----
